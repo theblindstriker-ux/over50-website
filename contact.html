@@ -39,9 +39,17 @@
                     <h1 class="fade-in-up">お問い合わせ</h1>
                     <p class="fade-in-up delay-1">ご質問、ご意見、各種ご相談などはこちらのフォームよりお願いいたします。</p>
                 </div>
-                
-                <div class="glass-card fade-in-up delay-2" style="margin-bottom: 4rem; display: flex; justify-content: center; padding: 2rem 1rem;">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKJHP3zqPiAj_mtcmFvoGIXGPtbWshsT3KZKTietYPVLXe-Q/viewform?embedded=true" width="100%" height="679" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 640px; border-radius: 8px;">読み込んでいます…</iframe>
+                <div class="fade-in-up delay-2" style="margin-bottom: 4rem; display: flex; flex-direction: column; align-items: center; padding: 0 1rem;">
+                    <!-- iOS Safari特有のiframe干渉（backdrop-filter等のバグ）を防ぐため、単純なラッパーに変更 -->
+                    <div style="width: 100%; max-width: 640px; background: rgba(255, 255, 255, 0.05); border-radius: 8px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKJHP3zqPiAj_mtcmFvoGIXGPtbWshsT3KZKTietYPVLXe-Q/viewform?embedded=true" width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0" style="display: block;">読み込んでいます…</iframe>
+                    </div>
+                    
+                    <!-- iPhoneでCookie制限等により入力できない場合のための代替ボタン -->
+                    <div style="margin-top: 2rem; text-align: center; background: var(--surface-color); padding: 1.5rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1rem;">※iPhone等で文字が入力できない・ボタンが押せない場合は、<br>お手数ですが以下のボタンより直接フォームを開いてください。</p>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKJHP3zqPiAj_mtcmFvoGIXGPtbWshsT3KZKTietYPVLXe-Q/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary">別ウィンドウで入力する</a>
+                    </div>
                 </div>
             </div>
         </section>
