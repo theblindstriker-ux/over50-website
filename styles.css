@@ -2,8 +2,8 @@
 :root {
   --bg-color: #0f172a; /* Slate 900 */
   --surface-color: rgba(30, 41, 59, 0.6); /* Slate 800 with opacity */
-  --text-primary: #f8fafc; /* Slate 50 */
-  --text-secondary: #cbd5e1; /* Slate 300 */
+  --text-primary: #ffffff; /* Pure White */
+  --text-secondary: #e2e8f0; /* Slate 200 */
   --accent-color: #fbbf24; /* Amber 400 */
   --accent-glow: rgba(251, 191, 36, 0.15);
   --gradient-text: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
@@ -20,6 +20,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   line-height: 1.7;
+  font-size: 1.1rem;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
@@ -190,39 +191,49 @@ h1, h2, h3 {
   list-style: none;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .article-list li {
-  margin-bottom: 1.2rem;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.8rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: var(--text-secondary);
-}
-
-.article-list li:hover {
-  color: var(--text-primary);
-  transform: translateX(5px);
-}
-
-.article-list li::before {
-  content: '→';
-  color: var(--accent-color);
-  font-weight: bold;
+  font-size: 1rem;
 }
 
 .article-list li a {
-  color: inherit;
+  display: block;
+  padding: 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-primary);
   text-decoration: none;
-  transition: color 0.3s ease;
-  display: block; /* Make the whole area clickable */
+  transition: all 0.3s ease;
+  position: relative;
+  padding-right: 2.5rem; /* Space for the arrow */
 }
 
-.article-list li:hover a {
+.article-list li a::after {
+  content: '→';
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--accent-color);
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.article-list li a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(251, 191, 36, 0.3);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: var(--accent-color);
+}
+
+.article-list li a:hover::after {
+  transform: translate(5px, -50%);
 }
 
 /* Navigation */
