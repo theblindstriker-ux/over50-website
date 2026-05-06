@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール | OVER50の生存戦略</title>
+    <meta name="description" content="OVER50の生存戦略の運営者プロフィールです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BJ4K4RHMF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8BJ4K4RHMF');
+    </script>
+    <style>
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
+        .profile-info {
+            max-width: 600px;
+        }
+        .profile-name {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        .profile-title {
+            color: var(--accent-color);
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+        .profile-bio {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            text-align: left;
+        }
+        @media (min-width: 768px) {
+            .profile-container {
+                flex-direction: row;
+                align-items: flex-start;
+                text-align: left;
+                gap: 4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="gradient-text">OVER</span>50</a>
+            <div class="nav-links" style="display: flex; gap: 1rem;">
+                <a href="index.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--text-secondary); color: var(--text-primary); text-decoration: none;">ホームに戻る</a>
+                <a href="community.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">コミュニティ</a>
+                <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">お問い合わせ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="fade-in-up">プロフィール</h1>
+                    <p class="fade-in-up delay-1">運営者について</p>
+                </div>
+                
+                <div class="glass-card fade-in-up delay-2" style="margin-bottom: 4rem;">
+                    <div class="profile-container">
+                        <!-- アイコン -->
+                        <div style="min-width: 150px; height: 150px; border-radius: 50%; background: var(--gradient-text); display: flex; align-items: center; justify-content: center; font-size: 4rem; margin: 0 auto;">👤</div>
+                        
+                        <div class="profile-info">
+                            <h2 class="profile-name">運営者</h2>
+                            <p class="profile-title">IT初心者の50代ビジネスパーソン</p>
+                            <div class="profile-bio">
+                                <p>50歳を過ぎてから「このままではいけない」と一念発起し、ITリテラシーの向上と新しい働き方の模索をスタートしました。</p>
+                                <br>
+                                <p>これまで長年培ってきた経験と、新しいテクノロジーを掛け合わせることで、人生の後半戦を「余生」ではなく「黄金期」に変えることができると信じています。</p>
+                                <br>
+                                <p>このサイト「OVER50の生存戦略」は、私自身が学び、試行錯誤していく過程を共有し、同世代の皆さんと共に成長していくためのプラットフォームとして立ち上げました。一緒にデジタルを武器に、カラダを資本にして、新しい時代を生き抜きましょう。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta fade-in-up">
+                <h3>次のステップへ</h3>
+                <div class="footer-links">
+                    <a href="community.html" class="btn btn-primary">コミュニティに参加する</a>
+                    <a href="contact.html" class="btn" style="border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">お問い合わせ</a>
+                </div>
+            </div>
+            <p>&copy; 2026 <span class="brand-text"><span class="gradient-text">OVER</span>50</span>の生存戦略 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
