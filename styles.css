@@ -38,6 +38,12 @@ h1, h2, h3 {
   -webkit-text-fill-color: transparent;
 }
 
+.brand-text {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--text-primary);
+}
+
 /* Layout & Utility */
 .container {
   max-width: 1200px;
