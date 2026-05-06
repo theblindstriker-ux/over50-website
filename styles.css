@@ -338,14 +338,44 @@ h1, h2, h3 {
   .hero {
     padding-top: 100px; /* タイトルが見えるように余白を確保 */
   }
+  main {
+    padding-top: 80px !important; /* 100pxから縮小してフォームを見やすく */
+  }
   .section {
-    padding: 4rem 0;
+    padding: 2.5rem 0; /* 4remから縮小して画面を広く使う */
+  }
+  .section-header {
+    margin-bottom: 2rem; /* 余白を縮小 */
+  }
+  .section-header h1, .section-header h2 {
+    font-size: 1.5rem !important; /* 見出しサイズを小さく */
+  }
+  .section-header p {
+    font-size: 0.95rem !important; /* 説明文のサイズも調整 */
   }
   .glass-card {
     padding: 1.5rem;
   }
+  .footer {
+    padding: 2rem 0 1.5rem !important; /* 縦幅を小さく */
+  }
+  .footer-cta {
+    margin-bottom: 1.5rem !important;
+  }
+  .footer-cta h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 1rem !important;
+  }
   .footer-links {
-    flex-direction: column;
-    padding: 0 1rem;
+    flex-direction: row !important; /* 横並びに変更 */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0;
+  }
+  .footer-links .btn {
+    padding: 0.5rem 0.8rem !important; /* ボタンも少し小さくして収める */
+    font-size: 0.8rem !important;
+    white-space: nowrap;
   }
 }
