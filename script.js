@@ -51,11 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Navbar shrink on scroll
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
+        const isMobile = window.innerWidth <= 768;
         if (window.scrollY > 50) {
-            navbar.style.padding = '1rem 0';
+            navbar.style.padding = isMobile ? '0.4rem 0' : '1rem 0';
             navbar.style.background = 'rgba(15, 23, 42, 0.95)';
         } else {
-            navbar.style.padding = '1.5rem 0';
+            navbar.style.padding = isMobile ? '0.6rem 0' : '1.5rem 0';
             navbar.style.background = 'rgba(15, 23, 42, 0.8)';
         }
     });
