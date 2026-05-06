@@ -284,10 +284,26 @@ h1, h2, h3 {
 /* Footer */
 .footer {
   text-align: center;
-  padding: 3rem 0;
+  padding: 4rem 0 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   color: var(--text-secondary);
   font-size: 0.9rem;
+}
+
+.footer-cta {
+  margin-bottom: 3rem;
+}
+
+.footer-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 /* Responsive adjustments */
@@ -297,5 +313,9 @@ h1, h2, h3 {
   }
   .glass-card {
     padding: 1.5rem;
+  }
+  .footer-links {
+    flex-direction: column;
+    padding: 0 1rem;
   }
 }
