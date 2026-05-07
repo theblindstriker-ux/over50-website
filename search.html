@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サイト内検索 | OVER50のソーシャルデザイン</title>
+    <meta name="description" content="OVER50のソーシャルデザイン サイト内検索。50代からのITスキル・生涯学習・健康に関するコンテンツを検索できます。">
+    <meta name="robots" content="noindex, follow">
+
+    <!-- OGP -->
+    <meta property="og:title" content="サイト内検索 | OVER50のソーシャルデザイン">
+    <meta property="og:description" content="OVER50のソーシャルデザイン サイト内検索">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://theblindstriker-ux.github.io/over50-website/search.html">
+    <meta property="og:site_name" content="OVER50のソーシャルデザイン">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=2">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BJ4K4RHMF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8BJ4K4RHMF');
+    </script>
+
+    <!-- Google CSE -->
+    <script async src="https://cse.google.com/cse.js?cx=YOUR_CSE_ID_HERE"></script>
+
+    <style>
+        /* Google CSE カスタムスタイル */
+        .gcse-search-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* CSEの見た目をサイトに合わせて上書き */
+        .gsc-control-cse {
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            font-family: 'Inter', 'Noto Sans JP', sans-serif !important;
+        }
+
+        .gsc-input-box {
+            background: rgba(30, 41, 59, 0.8) !important;
+            border: 1px solid rgba(251, 191, 36, 0.3) !important;
+            border-radius: 12px !important;
+        }
+
+        .gsc-input {
+            background: transparent !important;
+            color: #ffffff !important;
+        }
+
+        .gsc-search-button-v2 {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%) !important;
+            border: none !important;
+            border-radius: 8px !important;
+            padding: 8px 16px !important;
+        }
+
+        .gsc-result {
+            background: rgba(30, 41, 59, 0.6) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 12px !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .gs-title {
+            color: #fbbf24 !important;
+        }
+
+        .gs-snippet {
+            color: #e2e8f0 !important;
+        }
+
+        .gsc-cursor-box {
+            text-align: center;
+        }
+
+        .cse .gsc-control-cse,
+        .gsc-control-cse {
+            padding: 0 !important;
+        }
+
+        .search-notice {
+            background: rgba(251, 191, 36, 0.08);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        .search-notice strong {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" aria-label="メインナビゲーション">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="gradient-text">OVER</span>50</a>
+            <div class="nav-links" style="display: flex; gap: 1rem; align-items: center;">
+                <a href="index.html" class="btn"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--text-secondary); color: var(--text-primary); text-decoration: none;">ホームに戻る</a>
+                <a href="profile.html" class="btn"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">プロフィール</a>
+                <a href="community.html" class="btn"
+                    style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">コミュニティ</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="fade-in-up">🔍 サイト内検索</h1>
+                    <p class="fade-in-up delay-1">OVER50のソーシャルデザイン サイト内を検索できます</p>
+                </div>
+
+                <div class="glass-card fade-in-up delay-2" style="max-width: 800px; margin: 0 auto 3rem;">
+                    <div class="search-notice">
+                        💡 <strong>検索のヒント：</strong>「IT入門」「筋トレ」「Discord」「コミュニティ」などのキーワードで検索してみてください。<br>
+                        ※ Googleがサイトをインデックス済みのコンテンツが検索対象となります。
+                    </div>
+
+                    <!-- Google CSE 検索ボックス + 結果 -->
+                    <div class="gcse-search-wrapper">
+                        <div class="gcse-search" id="gsc-search-box" data-resultsUrl="search.html"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta fade-in-up">
+                <h3>次のステップへ</h3>
+                <div class="footer-links">
+                    <a href="community.html" class="btn btn-primary">コミュニティに参加する</a>
+                    <a href="contact.html" class="btn"
+                        style="border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">お問い合わせ</a>
+                </div>
+            </div>
+            <p>&copy; 2026 <span class="brand-text"><span class="gradient-text">OVER</span>50</span>のソーシャルデザイン All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

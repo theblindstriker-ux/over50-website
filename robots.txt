@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theblindstriker-ux.github.io/over50-website/sitemap.xml
