@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // 外部サイトへのリンクを別タブで開く設定
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+        if (link.hostname !== window.location.hostname) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener noreferrer');
+        }
+    });
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
