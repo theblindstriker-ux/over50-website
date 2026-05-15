@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ↓【記事ごとに書き換える部分】タイトル -->
+    <title>50代から基本情報技術者試験に合格！私が実践した勉強法とおすすめ教材 - OVER50</title>
+    <!-- ↓【記事ごとに書き換える部分】説明文 -->
+    <meta name="description" content="50代から基本情報技術者試験に合格した勉強法、モチベーション維持のコツ、使用した教材を紹介します。">
+    <link rel="canonical" href="https://theblindstriker-ux.github.io/over50-website/article-template.html">
+
+    <!-- OGP -->
+    <meta property="og:title" content="50代から基本情報技術者試験に合格！私が実践した勉強法">
+    <meta property="og:description" content="50代からのITリスキリング体験談。基本情報技術者の勉強法を徹底解説。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://theblindstriker-ux.github.io/over50-website/article-template.html">
+    <meta property="og:site_name" content="OVER50のソーシャルデザイン">
+    <meta property="og:locale" content="ja_JP">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
+
+    <!-- 記事用カスタムスタイル -->
+    <style>
+        .article-content {
+            background: rgba(30, 41, 59, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2rem;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #e2e8f0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        @media (min-width: 768px) {
+            .article-content {
+                padding: 4rem;
+            }
+        }
+        .article-content h1 {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        @media (min-width: 768px) {
+            .article-content h1 {
+                font-size: 2.2rem;
+            }
+        }
+        .article-meta {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .article-meta span {
+            background: rgba(255,255,255,0.1);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+        }
+        .article-content h2 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid rgba(99, 102, 241, 0.3);
+        }
+        .article-content h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        .article-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .article-content ul, .article-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+        }
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8BJ4K4RHMF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-8BJ4K4RHMF');
+    </script>
+
+    <!-- 記事用 構造化データ（Schema.org） -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://theblindstriker-ux.github.io/over50-website/article-template.html"
+      },
+      "headline": "50代から基本情報技術者試験に合格！私が実践した勉強法とおすすめ教材",
+      "datePublished": "2026-05-15",
+      "author": {
+        "@type": "Person",
+        "name": "OVER50 運営者"
+      }
+    }
+    </script>
+</head>
+<body>
+    <nav class="navbar" aria-label="メインナビゲーション">
+        <div class="container nav-container">
+            <a href="index.html" class="logo"><span class="gradient-text">OVER</span>50</a>
+            <div class="nav-links" style="display: flex; gap: 1rem; align-items: center;">
+                <a href="index.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--text-secondary); color: var(--text-primary); text-decoration: none;">ホーム</a>
+                <a href="profile.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">プロフィール</a>
+                <a href="community.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">コミュニティ</a>
+                <a href="column.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none; background: rgba(99, 102, 241, 0.1);">コラム</a>
+                <a href="contact.html" class="btn" style="padding: 0.5rem 1.5rem; font-size: 0.9rem; border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">お問い合わせ</a>
+                <a href="search.html" class="btn nav-search-btn" style="padding: 0.5rem 1rem; font-size: 0.9rem; border: 1px solid rgba(251,191,36,0.4); color: var(--text-primary); text-decoration: none; background: rgba(251,191,36,0.08);" aria-label="サイト内検索">🔍</a>
+            </div>
+        </div>
+    </nav>
+
+    <main style="padding-top: 100px;">
+        <article class="section">
+            <div class="container">
+                <div class="article-content fade-in-up">
+                    
+                    <!-- 記事ヘッダー -->
+                    <div class="article-meta">
+                        <time datetime="2026-05-15">📅 2026.05.15</time>
+                        <span>資格・学習</span>
+                    </div>
+                    <h1>50代から基本情報技術者試験に合格！私が実践した勉強法とおすすめ教材</h1>
+                    
+                    <!-- アイキャッチ画像（あれば） -->
+                    <!-- <img src="article_image1.jpg" alt="基本情報技術者の勉強ノート"> -->
+
+                    <!-- 記事本文 -->
+                    <p>こんにちは、OVER50運営者です。<br>
+                    「ITの基礎をしっかり身につけたい」と思い立ち、50歳を過ぎてから基本情報技術者試験（FE）の勉強を始め、無事に合格することができました。</p>
+
+                    <p>この記事では、文系出身・50代の私が、どのようにして合格をつかんだのか、その具体的な勉強法や活用した教材をご紹介します。</p>
+
+                    <h2>1. なぜ50代で基本情報技術者試験を受けたのか</h2>
+                    <p>これからの時代、AIやITツールを使いこなすためには「基礎的なITリテラシー」が不可欠だと感じたからです。「何となく使えている」状態から脱却し、体系的な知識を得ることで、自分の経験をさらに社会に活かせると考えました。</p>
+
+                    <h2>2. おすすめの学習教材（動画＋過去問）</h2>
+                    <p>記憶力や集中力が若い頃と同じようにはいかない50代の勉強では、「耳と目で覚える」動画学習が非常に効果的でした。</p>
+                    
+                    <h3>YouTubeを活用したインプット</h3>
+                    <ul>
+                        <li><strong>ITスキマ教室：</strong> アニメーションで視覚的に理解できるため、最初の一歩に最適でした。</li>
+                        <li><strong>すーさんのIT塾：</strong> 試験に頻出する重要なポイントを分かりやすく解説してくれます。</li>
+                    </ul>
+
+                    <h3>過去問道場でアウトプット</h3>
+                    <p>インプットと同じくらい重要なのがアウトプットです。私は「基本情報技術者試験ドットコム」の過去問道場を毎日解き、間違えたところを動画で見直すというサイクルを繰り返しました。</p>
+
+                    <h2>3. 挫折しないためのモチベーション維持</h2>
+                    <p>孤独な勉強は挫折の元です。私は通信制大学での学習と並行していましたが、同世代でITを学ぶ仲間とDiscordで情報交換できたことが大きな励みになりました。</p>
+                    <p>分からないことを恥ずかしがらずに質問できる環境（サードプレイス）を持つことが、50代のリスキリング成功の鍵だと確信しています。</p>
+
+                    <!-- 記事フッター / CTA -->
+                    <div style="margin-top: 4rem; padding: 2rem; background: rgba(99, 102, 241, 0.1); border-radius: 12px; text-align: center;">
+                        <h3 style="margin-top: 0;">一人で悩まず、一緒に学びませんか？</h3>
+                        <p>OVER50では、ITスキル向上や資格取得を目指す50代のためのLINEコミュニティ（無料・匿名OK）を運営しています。</p>
+                        <a href="community.html" class="btn btn-primary" style="margin-top: 1rem;">LINEコミュニティに参加する</a>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cta fade-in-up">
+                <h3>次のステップへ</h3>
+                <div class="footer-links">
+                    <a href="community.html" class="btn btn-primary">コミュニティに参加する</a>
+                    <a href="contact.html" class="btn" style="border: 1px solid var(--accent-color); color: var(--text-primary); text-decoration: none;">お問い合わせ</a>
+                </div>
+            </div>
+            <p>&copy; 2026 <span class="brand-text"><span class="gradient-text">OVER</span>50</span>のソーシャルデザイン All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
